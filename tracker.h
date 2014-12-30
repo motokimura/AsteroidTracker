@@ -6,8 +6,8 @@
 
 #include <float.h>
 
-#include <Eigen/Eigen>
-#include <Eigen/Dense>
+#include "eigen-eigen-6b38706d90a9/eigen/Eigen"
+#include "eigen-eigen-6b38706d90a9/eigen/Dense"
 using namespace Eigen;
 
 class SpaceObjectTracker
