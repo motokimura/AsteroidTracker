@@ -8,6 +8,7 @@ using namespace std;
 
 int trackDespatch (AsteroidDespatchTracker *tracker, double begin, double end, double interval);
 int searchPasses (AsteroidDespatchTracker *tracker, double begin, double end);
+int testTrajectory (AsteroidDespatchTracker *tracker);
 
 int main (void)
 {
@@ -24,6 +25,7 @@ int main (void)
 	
 	trackDespatch (&tracker, unixtime_begin, unixtime_end, interval);	// get tracking data
 	searchPasses (&tracker, unixtime_begin, unixtime_end);				// search passes
+    //testTrajectory (&tracker);
 
 	return 0;
 }
@@ -103,4 +105,33 @@ int searchPasses (AsteroidDespatchTracker *tracker, double begin, double end)
 	cout << endl;
 
 	return 0;
+}
+
+int testTrajectory (AsteroidDespatchTracker *tracker)
+{
+    const double AU = 149597871000.0;   // meter
+    
+    double begin = 1420070400.0;
+    double end = begin + 400.0 * 24.0 * 3600.0;
+    double interval = 24.0 * 3600.0;
+    
+    double time = begin;
+    cout << setprecision (12);
+    cout << "unixtime, x, y, z" << endl;
+    
+    double pos_sc[3];
+    
+    do 
+    {
+            tracker->setTargetUnixtime (time);
+            tracker->getTargetPositionSci (pos_sc);
+            
+            cout << time << ",";
+            cout << pos_sc[0] / AU << "," << pos_sc[1] / AU << "," << pos_sc[2] / AU << "," << endl;
+            
+            time += interval;
+            
+    } while (time < end);
+    
+    return 0;
 }

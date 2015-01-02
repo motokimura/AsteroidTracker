@@ -3,14 +3,14 @@
 Earth:: Earth (void): Planet ()
 {
 	Planet:: OrbitInfo info;
-	// Rika-nenpyo H.26
-	info.epochJDay = 2456800.5;
-	info.keplerian.a = 1.0;
-	info.keplerian.e = 0.0167;
-	info.keplerian.i = 0.002;
-	info.keplerian.w = 102.985;
-	info.keplerian.W = 354.838;
-	info.keplerian.M0 = 137.350;
+	// http://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html, January 2014
+	info.epochJDay = 2451545.00000;
+	info.keplerian.a = 1.00000011;
+	info.keplerian.e = 0.01671022;
+	info.keplerian.i = 0.00005;
+    info.keplerian.W = -11.26064;
+	info.keplerian.w = 102.94719 - info.keplerian.W;
+	info.keplerian.M0 = 100.46435 - info.keplerian.W - info.keplerian.w;
 
 	Planet:: setOrbitInfo (info);
 }

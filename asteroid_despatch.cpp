@@ -11,12 +11,12 @@ AsteroidDespatchTracker:: AsteroidDespatchTracker (void): AsteroidTracker ()
 	Planet:: OrbitInfo despatch_orbit;
 	
 	despatch_orbit.epochJDay = 2457023.5;		// 2015/1/01 00:00:00 UTC
-	despatch_orbit.keplerian.a = 1.021898798;	// [AU]
-	despatch_orbit.keplerian.e = 0.09221357958;	// [-]
-	despatch_orbit.keplerian.i = 6.740416311;	// [deg]
-	despatch_orbit.keplerian.w = 107.4801793;	// [deg]
-	despatch_orbit.keplerian.W = 245.4163230;	// [deg]
-	despatch_orbit.keplerian.M0 = 90.28021171;	// [deg]
+	despatch_orbit.keplerian.a = 1.003881127;	// [AU]
+	despatch_orbit.keplerian.e = 0.08741828512;	// [-]
+	despatch_orbit.keplerian.i = 6.796995362;	// [deg]
+	despatch_orbit.keplerian.w = 96.90057903;	// [deg]
+	despatch_orbit.keplerian.W = 250.5520871;	// [deg]
+	despatch_orbit.keplerian.M0 = 101.6280436;	// [deg]
 
 	AsteroidTracker:: setAsteroidOrbitInfo (despatch_orbit);
 }
