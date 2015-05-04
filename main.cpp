@@ -24,8 +24,8 @@ int main (void)
 	tracker.setObserverGeoCoord (observer_lat, observer_lon, observer_alt);	// set the observer position
 	
 	trackDespatch (&tracker, unixtime_begin, unixtime_end, interval);	// get tracking data
-	searchPasses (&tracker, unixtime_begin, unixtime_end);				// search passes
-    //testTrajectory (&tracker);
+	searchPasses (&tracker, unixtime_begin, unixtime_end);			// search passes
+	//testTrajectory (&tracker);
 
 	return 0;
 }
