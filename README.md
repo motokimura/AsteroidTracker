@@ -1,6 +1,6 @@
 AsteroidTracker
 ===
-A library to track asteroids written in C/C++.
+A library to track asteroids, written in C/C++.
 
 ## Description
 This library enables you to calculate the position and velocity of asteroids that go around the Sun. 
