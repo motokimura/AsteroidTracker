@@ -13,7 +13,7 @@ int testTrajectory (AsteroidDespatchTracker *tracker);
 int main (void)
 {
 	// inputs
-	double unixtime_begin = 1417587612.0;							// departure, 2014/12/03 06:20:12 UTC
+	double unixtime_begin = 1417587612.0;	// departure, 2014/12/03 06:20:12 UTC
 	double unixtime_end = unixtime_begin + 30.0 * 24.0 * 3600.0;
 	double interval = 24.0 * 3600.0;	// [sec]
 	double observer_lat = 35.610603;	// [deg]
