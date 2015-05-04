@@ -12,7 +12,7 @@ A sample program is written in main.cpp. The orbit parameters in the sample are 
 
 ## Licence
 
-MIT Licence.
+This software is released under the MIT License, see LICENSE.txt.
 
 ## Author
 
