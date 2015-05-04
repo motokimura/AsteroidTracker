@@ -108,12 +108,14 @@ int Planet:: solveKeplerEquation (double *eccentric_anomaly)
 	double e = orbitInfo_.keplerian.e;
 	double M0 = orbitInfo_.keplerian.M0;
 	double epoch = orbitInfo_.epochJDay;
-
+    
 	double n = sqrt (MueSun_ / (a*a*a));
 	const double SecondsDay = 24.0 * 3600.0;
 	double dt = (targetJDay_ - epoch) * SecondsDay;
-
-	double M = M0 + n * dt;	// mean anomaly at target time
+    
+    double dM = n * dt;
+    tf:: normalizeRadian (&dM);
+	double M = M0 + dM;	// mean anomaly at target time
 
 	double E;	// eccentric anomaly
 	double tmpE = M;

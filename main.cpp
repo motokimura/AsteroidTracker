@@ -14,7 +14,7 @@ int main (void)
 {
 	// inputs
 	double unixtime_begin = 1417587612.0;							// departure, 2014/12/03 06:20:12 UTC
-	double unixtime_end = unixtime_begin + 7.0 * 24.0 * 3600.0;
+	double unixtime_end = unixtime_begin + 30.0 * 24.0 * 3600.0;
 	double interval = 24.0 * 3600.0;	// [sec]
 	double observer_lat = 35.610603;	// [deg]
 	double observer_lon = 139.351124;	// [deg]
@@ -33,7 +33,7 @@ int main (void)
 int trackDespatch (AsteroidDespatchTracker *tracker, double begin, double end, double interval)
 {
 	double time = begin;
-	cout << setprecision (10) << endl;
+	cout << setprecision (15) << endl;
 	cout << "unixtime,elevation[deg],azimuth[deg],doppler_down,doppler_up,distance[km],declination[deg],right_ascension[deg],phase" << endl;
 	do 
 	{
