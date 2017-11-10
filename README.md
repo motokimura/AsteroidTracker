@@ -8,7 +8,7 @@ The direction (azimuth and elevation) to the asteroid and doppler rate at your l
 so that you can use this for asteroid tracking at your ground station.
 
 ## Usage
-A sample program is written in main.cpp. The orbit parameters defined as Keplerian elements in the sample are adjusted to ones of ARTSAT space-probe, [DESPATCH](http://artsat.jp/en/project/despatch). To track another asteroids, specify its Keplerian elements using setAsteroidOrbitInfo( ) function that is defined in asteroid_tracker.cpp.
+A sample program is written in main.cpp. The orbit parameters defined as Keplerian elements in the sample are adjusted to ones of [ARTSAT](http://artsat.jp) space-probe, [DESPATCH](http://artsat.jp/en/project/despatch). To track another asteroids, specify its Keplerian elements using setAsteroidOrbitInfo( ) function that is defined in asteroid_tracker.cpp.
 
 ## Demo
 http://api.artsat.jp/pass/
