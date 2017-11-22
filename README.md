@@ -23,5 +23,6 @@ A sample program is written in main.cpp. The orbit parameters defined as Kepleri
 
 ## Team
 
-[Motoki Kimura](https://github.com/motokimura)<br />
+[Motoki Kimura](https://github.com/motokimura)
+
 [ARTSAT Project](https://github.com/ARTSAT)
