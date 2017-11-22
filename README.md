@@ -11,11 +11,9 @@ so that you can use this for asteroid tracking at your ground station.
 A sample program is written in main.cpp. The orbit parameters defined as Keplerian elements in the sample are adjusted to ones of [ARTSAT](http://artsat.jp) space-probe, [DESPATCH](http://artsat.jp/en/project/despatch). To track another asteroids, specify its Keplerian elements using setAsteroidOrbitInfo( ) function that is defined in asteroid_tracker.cpp.
 
 ## Projects
-[DESPATCH Orbit 3D Viewer](http://artsat.jp/en/project/despatch/orbit)
-
-[DESPATCH in Starlit Sky](http://artsat.jp/en/project/despatch/celestial)
-
-[DESPATCH Tracking API](http://api.artsat.jp/pass/)
+[DESPATCH Orbit 3D Viewer](http://artsat.jp/en/project/despatch/orbit)<br />
+[DESPATCH in Starlit Sky](http://artsat.jp/en/project/despatch/celestial)<br />
+[DESPATCH Tracking API](http://api.artsat.jp/pass/)<br />
 
 ## Licence
 
@@ -23,6 +21,5 @@ A sample program is written in main.cpp. The orbit parameters defined as Kepleri
 
 ## Team
 
-[Motoki Kimura](https://github.com/motokimura)
-
+[Motoki Kimura](https://github.com/motokimura)<br />
 [ARTSAT Project](https://github.com/ARTSAT)
